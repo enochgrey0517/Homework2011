@@ -1,0 +1,23 @@
+nucleotides<-c("A","C","G","T")
+roll_base<-function(n=1000)
+{
+  result<-c()
+  n
+  while(n>0){
+    DNA<-sample(x=nucleotides,size=50,replace=T)
+    DNA[which(DNA=="T")]<-"U"
+    RNA<-data.frame(DNA)
+    a<-sample(1:50,25,F)
+    RNA1<-data.frame(RNA[a,])
+    b<-1:50
+    c<-b[-a]
+    RNA2<-data.frame(RNA[c,])
+    compare<-data.frame(RNA1,RNA2)
+    d<-which(compare$RNA.a...==compare$RNA.c...)
+    e<-length(d)
+    result=rbind(result,e)
+    n<-n-1
+    if(n==0){hist(result)
+      break; }}
+}
+roll_base(10000)

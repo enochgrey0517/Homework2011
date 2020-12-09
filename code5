@@ -1,6 +1,6 @@
 #本周将利用R中自带的iris的数据集进行分析，iris中文名是鸢尾花，有四个属性，分别是Sepal.Length（花萼长度），Sepal.Width（花萼宽度），Petal.Length（花瓣长度），Petal.Width（花瓣宽度），以及一个亚种标签Species
-#1.	对鳶尾花的三个亚种（setosa、versicolor、virginica）分别统计它们的花萼长度（Sepal.Length）、花萼宽度（Sepal.Width）、花瓣长度（Petal.Length）、花瓣宽度（Petal.Width）的最大值、最小值、均值、中位数等特征，并绘制箱线图进行展示
-#2.	请问鸢尾花的四种属性花萼长度（Sepal.Length）、花萼宽度（Sepal.Width）、花瓣长度（Petal.Length）、花瓣宽度（Petal.Width）之间是否存在相关性？如何展示？
+#1、对鳶尾花的三个亚种（setosa、versicolor、virginica）分别统计它们的花萼长度（Sepal.Length）、花萼宽度（Sepal.Width）、花瓣长度（Petal.Length）、花瓣宽度（Petal.Width）的最大值、最小值、均值、中位数等特征，并绘制箱线图进行展示
+#2、请问鸢尾花的四种属性花萼长度（Sepal.Length）、花萼宽度（Sepal.Width）、花瓣长度（Petal.Length）、花瓣宽度（Petal.Width）之间是否存在相关性？如何展示？
 
 setosa<-data.frame(iris[which(iris$Species=="setosa"),])
 versicolor<-data.frame(iris[which(iris$Species=="versicolor"),])
